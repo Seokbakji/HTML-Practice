@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="회원가입" content="width=device-width, initial-scale=1">
+	<title>회원가입 양식</title>
+</head>
+<body>
+
+	<h1>회원가입 양식</h1>
+
+	<hr/>
+
+	<form action="회원가입.html" method="POST">
+		<fieldset>
+			<legend>아이디 / 비밀번호</legend>
+			<div>
+				<lable for="account-id">ID</lable>
+				<input type="text" id="account-id" name="ID" required="required">
+			</div>
+
+			<div>
+				<lable for="account-pw">비밀번호</lable>
+				<input type="password" id="account-pw" name="PW" required="required">
+			</div>
+
+			<div>
+				<lable for="account-pw">비밀번호 확인</lable>
+				<input type="password" id="account-pw-confirm" name="PW-confirm" required="required">
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>개인 정보</legend>
+			<div>
+				<label for="profile-name">이름</lable>
+				<input type="text" id="profile-name" name="NAME" required="required">
+			</div>
+
+			<div>
+				<label>생년 월일</label>
+				<input type="number" name="YEAR" required="required" min="1900" max="2024" placeholder="년">
+				<select name="MONTH">
+					<option value="">월</option>
+					<option value="1">1월</option>
+					<option value="2">2월</option>
+					<option value="3">3월</option>
+					<option value="4">4월</option>
+					<option value="5">5월</option>
+					<option value="6">6월</option>
+					<option value="7">7월</option>
+					<option value="8">8월</option>
+					<option value="9">9월</option>
+					<option value="10">10월</option>
+					<option value="11">11월</option>
+					<option value="12">12월</option>
+				<input type="number" name="DAY" required="required" min="1" max="31">
+			<div/>
+
+			<div>
+				<label>성별</label>
+				<input type="radio" id="gender-male" name="GENDER" value="MALE">
+				<lable for="gender-male">남</label>
+				<input type="radio" id="gender-female" name="GENDER" value="FEMALE">
+				<lable for="gender-female">여</label>
+				<input type="radio" id="gender-unknown" name="GENDER" value="UNKOWN">
+				<lable for="gender-unknown">기타</label>
+			<div/>
+		</fieldset>
+
+		<br/>
+
+		<div>
+			<input type="checkbox" id="agree" name="AGREE">
+			<label for="agree"> 본 사이트의 이용 약관과 개인 정보 수집 방침에 동의합니다.</label>
+		</div>
+
+		<br/>
+
+		<button type="submit" value="가입하기">가입하기</button>
+
+	</form>	
+
+</body>
+</html>
