@@ -1,0 +1,36 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+header {
+	text-align: center;
+	margin: 10px 5%;
+	padding: 20px 0;
+	border-bottom: 1px solid #303030;
+}
+
+header h1 {
+	display: inline;
+}
+
+header span {
+	background-color: yellow;
+	font-weight: 800;
+}
+
+.col {
+	display: inline-block;
+	width: 30%;
+	margin: 0 1%;
+}
+
+.col img {
+		width: 100%;
+		border: 3px double #303030;
+}
+
+.row {
+	margin: 20px 0;
+	text-align: center;
+}
