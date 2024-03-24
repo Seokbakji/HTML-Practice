@@ -1,0 +1,34 @@
+<script>
+	var solution = 10;
+	var input = prompt('숫자를 입력해주세요');
+
+	console.log(input);
+
+	if (input > solution + 2) {
+		alert('답이 입력하신 값보다 더 작습니다');
+	} else if (input < solution - 2) {
+		alert('답이 입력하신 값보다 더 큽니다');
+	} else {
+		if (input == solution) {
+			alert('정답입니다!');
+		} else {
+			alert('답이 입력하신 값과 매우 비슷합니다');
+		}
+	}
+
+	var gender = prompt('성별을 입력해주세요')
+
+	switch (gender) {
+	case '남자':
+		alert('Male');
+		break;
+	case '여자':
+		alert('Female');
+		break;
+	case '기타':
+		alert('Other');
+		break;
+	default:
+		alert('남자, 여자, 기타 중 하나를 입력해주세요')
+	}
+</script>
