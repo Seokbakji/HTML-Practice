@@ -1,0 +1,31 @@
+<script>
+	var n_1 = 1;
+	var n_2 = 1;
+
+	console.log('for문');
+	console.log(n_1);
+	console.log(n_2);
+
+	//for
+	for (var i = 0; i < 100; i ++) {
+		var n = n_1 + n_2;
+		console.log(n);
+		n_1 = n_2;
+		n_2 = n;
+	}
+
+	n_1 = 1;
+	n_2 = 1;
+
+	console.log('while문');
+	console.log(n_1);
+	console.log(n_2);
+
+	//while
+	while (n_2 < 10000) {
+		n = n_1 + n_2;
+		console.log(n);
+		n_1 = n_2;
+		n_2 = n;	
+	}
+</script>
