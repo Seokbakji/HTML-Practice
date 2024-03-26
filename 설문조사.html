@@ -1,0 +1,36 @@
+<script>
+	var list = [//배열 선언
+		{//배열 첫째칸
+		question: "다음 중 가장 선호하는 룰을 선택해주세요.",
+		options: ["랭크 에어리어", "랭크 타워", "랭크 피시", "랭크 바지락"]
+		},
+
+		{//배열 둘째칸
+			question: "다음 중 가장 선호하는 무기 군을 선택해주세요.",
+			options: ["슈터", "롤러", "슬로셔", "스트링거", "와이퍼"]
+		},
+
+		{//배열 셋째칸
+			question: "다음 중 귀하의 X파워는 어디에 속합니까?",
+			options: ["2000 이하", "2000 ~ 2200", "2200 ~ 2400", "2400 ~ 2500", "2500 이상"]
+		}
+	];
+	
+	for (var i = 0; i < list.length; i++) {
+		var questionMessage = (i + 1) + '번 문항) ' + list[i].question + '\n';
+		for (var j = 0; j < list[i].options.length; j++) {//questionMessage에 항목 문자열 추가
+			questionMessage += '\n' + (j + 1) + '. ' + list[i].options[j];
+		}
+		list[i].answer = prompt(questionMessage);
+	}
+
+	var answerMessage = '당신의 선택' + '\n';
+
+	for (i = 0; i < list.length; i++) {
+		var index = parseInt(list[i].answer);
+		//answerMessage에 답 문자열 추가
+		answerMessage += '\n' + (i + 1) + '번 문항) ' + list[i].options[index - 1];
+	}
+
+	alert(answerMessage);
+</script>
