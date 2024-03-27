@@ -4,6 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="회원가입" content="width=device-width, initial-scale=1">
 	<title>회원가입 양식</title>
+	<style>
+		.alert-message {
+			margin: 0 10px;
+			color: #f09090;
+			font-size: 14px;
+			font-weight: 900;
+		}
+	</style>
 </head>
 <body>
 
@@ -17,16 +25,19 @@
 			<div>
 				<lable for="account-id">ID</lable>
 				<input type="text" id="account-id" name="ID" required="required">
+				<span class="alert-message">TEST</span>
 			</div>
 
 			<div>
 				<lable for="account-pw">비밀번호</lable>
 				<input type="password" id="account-pw" name="PW" required="required">
+				<span class="alert-message">TEST</span>
 			</div>
 
 			<div>
-				<lable for="account-pw">비밀번호 확인</lable>
-				<input type="password" id="account-pw-confirm" name="PW-confirm" required="required">
+				<lable for="account-pw-confirm">비밀번호 확인</lable>
+				<input type="password" id="account-pw-confirm" name="PWconfirm" required="required">
+				<span class="alert-message">TEST</span>
 			</div>
 		</fieldset>
 
@@ -35,6 +46,7 @@
 			<div>
 				<label for="profile-name">이름</lable>
 				<input type="text" id="profile-name" name="NAME" required="required">
+				<span class="alert-message">TEST</span>
 			</div>
 
 			<div>
@@ -42,19 +54,8 @@
 				<input type="number" name="YEAR" required="required" min="1900" max="2024" placeholder="년">
 				<select name="MONTH">
 					<option value="">월</option>
-					<option value="1">1월</option>
-					<option value="2">2월</option>
-					<option value="3">3월</option>
-					<option value="4">4월</option>
-					<option value="5">5월</option>
-					<option value="6">6월</option>
-					<option value="7">7월</option>
-					<option value="8">8월</option>
-					<option value="9">9월</option>
-					<option value="10">10월</option>
-					<option value="11">11월</option>
-					<option value="12">12월</option>
 				<input type="number" name="DAY" required="required" min="1" max="31">
+				<span class="alert-message">TEST</span>
 			<div/>
 
 			<div>
@@ -65,6 +66,7 @@
 				<lable for="gender-female">여</label>
 				<input type="radio" id="gender-unknown" name="GENDER" value="UNKOWN">
 				<lable for="gender-unknown">기타</label>
+				<span class="alert-message">TEST</span>
 			<div/>
 		</fieldset>
 
@@ -80,6 +82,6 @@
 		<button type="submit" value="가입하기">가입하기</button>
 
 	</form>	
-
+	<script type="text/javascript" src="./scripts/회원가입 검증.js"></script>
 </body>
 </html>
